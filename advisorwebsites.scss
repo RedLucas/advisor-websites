@@ -1,0 +1,79 @@
+@import "bourbon";
+* {
+	@include box-sizing(border-box);
+}
+$white: white;
+$nav-item-width: 50px;
+body {
+	background: $white;
+	#page-wrapper {
+		#page {
+			
+			.block-superfish {
+				width: 100%;
+				a.sf-depth-1 {
+					width: $nav-item-width;
+					
+					
+				}
+			}
+			.sf-horizontal {
+				width: 100%;
+				> li {
+					text-align: center;
+					margin-left: calc(20% - 50px);
+				}
+				> li:first-child {
+					margin-left: 0;
+				}
+			}
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+	}
+}
