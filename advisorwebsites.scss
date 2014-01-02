@@ -1,38 +1,113 @@
+//This is an attempt to showcase my style and skills to AdvisorWebsites,
+//I prefer coding with SASS, I believe it streamlines the process significantly
+
+//Bourbon is nice for including vendor prefixes
 @import "bourbon";
 * {
+	//I often used border-box for the whole website, it helps when I try to do responsiveness.
 	@include box-sizing(border-box);
 }
+//Variables are a very useful part of SASS. I can set colours to variables, as well as things such as fonts. Usually I would use double Vars, like setting $white: white, then $background: $white. That way I am not limiting myself to a particular colour variable. While allowing myself to use a certain colour in more than one spot. I did not this time around.
 $white: white;
 $nav-item-width: 100px;
-$red: red;
+$red: RGBA(178.00, 11.00, 8.00, 1.00);
+$teal: RGBA(0.00, 142.00, 176.00, 1.00);
 body {
 	background: $white;
 	#page-wrapper {
+		//I am using this nesting like this to ensure that my styles will prevail, I realize that my styles look cluttered, but It was the best way to get my styles to prevail 100%.
+		//background: url("//lucasrasmussen.me/downloads/images/tweed.png");
 		#page {
+			//width: 960px;
+			//margin: auto;
+			//box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+			h1, h2, h3, h4 {
+				color: $teal;
+			}
+			a {
+				color: $teal;
+				@include transition(color 0.25s ease-in);
+				&:hover {
+					color: $red;
+				}
+			}
+			//I wanted to remove many of the little shadow effects, I was going for a very clean look, just wanted make it my style.
+			#header-bottom {
+				background: none;
+			}
+			
+			#main, #main #sidebar-first .section, #main #sidebar-second .section {
+				background: none;
+				
+			}
+			#block-menu_block-1 {
+				color: $teal;
+				background: none;
+			}
+			.callout-block.callout-meeting a, .callout-block.callout-tell a{
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.callout-block.callout-meeting a:before, .callout-block.callout-tell a:before {
+			//I am basically just showcasing that I understand icon fonts, I like font awesome anyways so it worked out.
+				font-family: "Advisor";
+				
+				
+				
+			}
+			
+			.callout-block.callout-meeting a:before {
+				
+				content: "";
+			}
+			.callout-block.callout-tell a:before {
+				
+				content: "";
+			}
+			
 			
 			.block-superfish {
+				//I worked on this Nav for much longer than I feel I should have. I do like the look though, having said that, I believe the spacing could use some refining.
 				width: 100%;
+				line-height: 70px;
+				margin-bottom: 10px;
+				border-bottom: 2px solid $teal;
 				a.sf-depth-1 {
 					//width: $nav-item-width;
 					font-size: 1.2em;
 					padding: 15px 30px;
-					@include transition(all 0.25s ease-in);
+					@include transition(color 0.25s ease-in);
 					border-radius: 5px;
 					&:hover {
 						
-						background-color: $red;
-						color: white;
+						color: $red;
 						
 					}
 					
 					
 				}
+				//nested menu styles
+				.sf-menu ul {
+						background: $white;
+						box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+						padding: 0;
+						@include transition(all 0.15s ease-out);
+						li {
+							padding: 15px;
+							a:hover {
+								background: none;
+							}
+						}
+						
+					}
+				
 			}
 			.sf-horizontal {
 				width: 100%;
 				> li {
 					text-align: center;
-					margin-left: calc(20% - 110px);
+					margin-left: calc(20% - 117px);
 				}
 				> li:first-child {
 					margin-left: 0;
@@ -40,17 +115,41 @@ body {
 			}
 
 			.featured {
+			//Unfortunately this image did not turn out as well as I wanted to. The Image quality is too low.
 				background-image: url("//lucasrasmussen.me/downloads/images/vancouver-horizon.jpg");
 				background-size: cover;
 				background-position: center bottom;
 				height: 500px;
+				position: relative;
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+				
+				.featured-content {
+					margin: 0;
+				}
+				.block-wrapper {
+					position: absolute;
+					bottom: 20px;
+					left: 20px;
+					padding: 10px;
+					background-color: rgba(255,255,255,0.5);
+					h2 {
+						color: $red;
+						margin-bottom: 0;
+					}
+					
+				}
 			}
 			
 			
 			
 			
 			
-			
+			#footer-wrapper {
+				background-color: $white;
+			}
+			#aw-wrapper {
+				background: $white;
+			}
 			
 			
 			
