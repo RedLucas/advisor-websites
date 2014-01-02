@@ -353,7 +353,7 @@
     "displayValueWasSetByUser" : 0,
     "displayValue" : "advisor-websites",
     "bowerAbbreviatedPath" : "",
-    "iconImageName" : "compass_blue"
+    "iconImageName" : "globe_darkGray"
   },
   "hooks" : [
 
@@ -374,6 +374,16 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
+    "\/images\/raw\/Vancouver_horizon_oct15.jpg" : {
+      "inputAbbreviatedPath" : "\/images\/raw\/Vancouver_horizon_oct15.jpg",
+      "outputAbbreviatedPath" : "\/images\/raw\/Vancouver_horizon_oct15.jpg",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 2433548,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16384
+    },
     "\/advisorwebsites.css" : {
       "inputAbbreviatedPath" : "\/advisorwebsites.css",
       "outputAbbreviatedPath" : "No Output Path",
@@ -382,13 +392,15 @@
       "ignoreWasSetByUser" : 0,
       "fileType" : 16
     },
-    "\/css\/advisorwebsites.css" : {
-      "inputAbbreviatedPath" : "\/css\/advisorwebsites.css",
-      "outputAbbreviatedPath" : "No Output Path",
+    "\/images\/vancouver-horizon.jpg" : {
+      "inputAbbreviatedPath" : "\/images\/vancouver-horizon.jpg",
+      "outputAbbreviatedPath" : "\/images\/vancouver-horizon.jpg",
       "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 498571,
       "ignoreWasSetByUser" : 0,
-      "fileType" : 16
+      "fileType" : 16384
     }
   }
 }

@@ -3,7 +3,8 @@
 	@include box-sizing(border-box);
 }
 $white: white;
-$nav-item-width: 50px;
+$nav-item-width: 100px;
+$red: red;
 body {
 	background: $white;
 	#page-wrapper {
@@ -12,7 +13,17 @@ body {
 			.block-superfish {
 				width: 100%;
 				a.sf-depth-1 {
-					width: $nav-item-width;
+					//width: $nav-item-width;
+					font-size: 1.2em;
+					padding: 15px 30px;
+					@include transition(all 0.25s ease-in);
+					border-radius: 5px;
+					&:hover {
+						
+						background-color: $red;
+						color: white;
+						
+					}
 					
 					
 				}
@@ -21,14 +32,19 @@ body {
 				width: 100%;
 				> li {
 					text-align: center;
-					margin-left: calc(20% - 50px);
+					margin-left: calc(20% - 110px);
 				}
 				> li:first-child {
 					margin-left: 0;
 				}
 			}
 
-			
+			.featured {
+				background-image: url("//lucasrasmussen.me/downloads/images/vancouver-horizon.jpg");
+				background-size: cover;
+				background-position: center bottom;
+				height: 500px;
+			}
 			
 			
 			
